@@ -50,5 +50,5 @@ Clone this repository to a temporary directory. Then (as `root`):
   |MARIADB_DUMP_PASS|`"****************"`|The password for the `MARIADB_DUMP_USER` user|
   |MARIADB_DUMP_DIR|`"/var/lib/mysql-dump"`|The output directory for compressed dump files. The script will attempt to create this directory if it does not already exist|
   |MARIADB_DUMP_SKIP_DB|`"information_schema performance_schema"`|A space-separated list of databases to skip|
-  |MARIADB_DUMP_KEEP_DAYS|`3`|Number of database backups to keep inm `MARIADB_DUMP_DIR`. This number can be low if backups are routinely performed of the system running MariaDB|
+  |MARIADB_DUMP_KEEP_DAYS|`3`|Number of database backups to keep in `MARIADB_DUMP_DIR`. This number can be low if backups are routinely performed of the system running MariaDB|
   
