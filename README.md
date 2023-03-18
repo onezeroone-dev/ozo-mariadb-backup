@@ -31,7 +31,7 @@ Create a mysql-backup user before using this script, substituting your own passw
 
 ```
 # mysql -u root -p
-mysql> GRANT SELECT, RELOAD, LOCK TABLES, SHOW VIEW ON *.* TO 'mysql-backup'@'localhost' IDENTIFIED BY '********';`
+mysql> GRANT SELECT, RELOAD, LOCK TABLES, SHOW VIEW ON *.* TO 'mysql-backup'@'localhost' IDENTIFIED BY '****************';
 mysql> flush privileges;
 mysql> quit;
 ```
