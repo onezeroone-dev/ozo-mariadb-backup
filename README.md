@@ -13,6 +13,10 @@ Install MariaDB e.g., as follows for RedHat-style distributions:
 
 `# dnf -y install mariadb mariadb-server`
 
+Set a strong password for the MariaDB `root` user, substituting your own password for `****************`:
+
+`# mysqladmin -u root password '****************'`
+
 Enable and start the MariaDB service e.g., as follow for RedHat-style distributions:
 
 `# systemctl enable --now mariadb`
