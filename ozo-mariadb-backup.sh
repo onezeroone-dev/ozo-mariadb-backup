@@ -112,7 +112,7 @@ function ozo-mariadb-dump-databases {
           then
             rm -f "${MARIADB_DUMP_FILE}"
             # remove dump files older than three days
-            find "${MARIADB_DUMP_DIR}/" -name "*-${DATABASE}-mysqldump*" -mtime +3 -exec rm {} \;
+            find "${MARIADB_DUMP_DIR}/" -name "*-${DATABASE}-mysqldump*" -mtime +${MARIADB_DUMP_KEEP_DAYS} -exec rm {} \;
             # log
             LEVEL="info" MESSAGE="Successfully dumped database ${DATABASE}." ozo-log
           else
