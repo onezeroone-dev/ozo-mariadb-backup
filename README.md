@@ -30,7 +30,7 @@ Set a strong password for the MariaDB `root` user, substituting your own passwor
 Create a mysql-backup user before using this script, substituting your own password for `****************`:
 
 ```
-# mysql -u root -p`
+# mysql -u root -p
 mysql> GRANT SELECT, RELOAD, LOCK TABLES, SHOW VIEW ON *.* TO 'mysql-backup'@'localhost' IDENTIFIED BY '********';`
 mysql> flush privileges;
 mysql> quit;
