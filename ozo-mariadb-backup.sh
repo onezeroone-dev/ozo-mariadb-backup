@@ -159,7 +159,7 @@ function ozo-mariadb-dump-program-loop {
 EXIT=0
 
 LEVEL="info" MESSAGE="Starting MariaDB Backup." ozo-log
-if ozo-mariadb-dump-program-loop # > /dev/null 2>&1
+if ozo-mariadb-dump-program-loop > /dev/null 2>&1
 then
   LEVEL="info" MESSAGE="Finished MariaDB Backup with success." ozo-log
 else
