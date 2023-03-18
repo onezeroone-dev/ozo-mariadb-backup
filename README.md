@@ -15,7 +15,7 @@ Install MariaDB e.g., as follows for RedHat-style distributions:
 # dnf -y install mariadb mariadb-server
 ```
 
-Enable and start the MariaDB service e.g., as follow for RedHat-style distributions:
+Enable and start the MariaDB service e.g., as follows for RedHat-style distributions:
 
 ```
 # systemctl enable --now mariadb
