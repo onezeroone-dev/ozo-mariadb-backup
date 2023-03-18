@@ -11,20 +11,31 @@ Please visit https://onezeroone.dev to learn more about this script and my other
 
 Install MariaDB e.g., as follows for RedHat-style distributions:
 
-`# dnf -y install mariadb mariadb-server`
+```
+# dnf -y install mariadb mariadb-server
+```
 
 Enable and start the MariaDB service e.g., as follow for RedHat-style distributions:
 
-`# systemctl enable --now mariadb`
+```
+# systemctl enable --now mariadb
+```
 
 Set a strong password for the MariaDB `root` user, substituting your own password for `****************`:
 
-`# mysqladmin -u root password '****************'`
+```
+# mysqladmin -u root password '****************'
+```
 
 Create a mysql-backup user before using this script, substituting your own password for `****************`:
 
-`# mysql -u root -p`
-`mysql> GRANT SELECT, RELOAD, LOCK TABLES, SHOW VIEW ON *.* TO 'mysql-backup'@'localhost' IDENTIFIED BY '********';`
+```
+# mysql -u root -p`
+mysql> GRANT SELECT, RELOAD, LOCK TABLES, SHOW VIEW ON *.* TO 'mysql-backup'@'localhost' IDENTIFIED BY '********';`
+mysql> flush privileges;
+mysql> quit;
+```
+
 ### Clone the Repository and Copy Files
 
 Clone this repository to a temporary directory. Then (as `root`):
