@@ -1,10 +1,10 @@
 #!/bin/bash
 # Script Name: ozo-mariadb-backup.sh
-# Version    : 1.0.0
+# Version    : 1.0.1
 # Description: Creates a dump of all MariaDB databases and performs history maintenance.
 # Usage      : /usr/sbin/ozo-mariadb-backup.sh
 # Author     : Andy Lievertz <alievertz@onezeroone.dev>
-# Link       :
+# Link       : https://github.com/onezeroone-dev/ozo-mariadb-backup/blob/main/README.md
 
 # FUNCTIONS
 function ozo-log {
