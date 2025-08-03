@@ -1,5 +1,5 @@
 Name:      ozo-mariadb-backup
-Version:   1.0.0
+Version:   1.0.1
 Release:   1%{?dist}
 Summary:   Creates a dump of all MariaDB databases and performs history maintenance.
 BuildArch: noarch
@@ -33,5 +33,7 @@ cp ozo-mariadb-backup.sh $RPM_BUILD_ROOT/usr/sbin
 %attr (0700,root,root) /usr/sbin/ozo-mariadb-backup.sh
 
 %changelog
+* Sun Aug 03 2025 One Zero One RPM Manager <repositories@onezeroone.dev> - 1.0.1-1
+- Minor docstring update
 * Fri Mar 17 2023 One Zero One RPM Manager <repositories@onezeroone.dev> - 1.0.0-1
 - Initial release

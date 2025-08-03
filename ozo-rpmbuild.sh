@@ -1,6 +1,6 @@
 # Set variables
 NAME="ozo-mariadb-backup"
-VERSION="1.0.0"
+VERSION="1.0.1"
 ARCH="noarch"
 OSRELE="10"
 PKRELE="1"
