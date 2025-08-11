@@ -30,6 +30,14 @@ dnf repolist
 dnf -y install ozo-mariadb-backup
 ```
 
+### AlmaLinux 9, Red Hat Enterprise Linux 9, Rocky Linux 9 (RPM)
+```bash
+rpm -Uvh https://repositories.onezeroone.dev/el/9/noarch/onezeroone-release-latest.el9.noarch.rpm
+rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-ONEZEROONE
+dnf repolist
+dnf -y install ozo-mariadb-backup
+```
+
 ### Debian (DEB)
 PENDING.
 
